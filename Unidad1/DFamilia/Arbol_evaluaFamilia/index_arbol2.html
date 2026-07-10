@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Arbol genealogico2</title>
+<link rel="stylesheet" href="estilosArbolg2.css"/>
+
+<script src="codigoArbolg2.js"></script>
+
+</head>
+
+<body>
+
+	 <audio id="audioM">
+    <source src="mal.m4a" type="audio/ogg">
+</audio>
+
+<audio id="audioB">
+    <source src="bien.m4a" type="audio/ogg">
+</audio>
+
+<div id="cont0"  >
+	<div id="enunciado">
+		<h1>organizar familia </h1>
+		<h2>Arrastra la imagen al texto correspondiente </h2>
+	
+	</div>
+	<div id="cont1" >
+	
+		<div id="imagen1"><img src="imagenes/mama.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento3"/></div>
+		<div id="imagen2"><img src="imagenes/papa.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento2"/></div>
+		<div id="imagen3"><img src="imagenes/abuelam.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento1"/></div>
+	
+		<div id="imagen4"><img src="imagenes/abuelom.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento6"/></div>
+		<div id="imagen5"><img src="imagenes/niño.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento5"/></div>
+		<div id="imagen6"><img src="imagenes/hermana.jpg" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento4"/></div>
+		<div id="imagen7"><img src="imagenes/tia.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento9"/></div>
+		<div id="imagen8"><img src="imagenes/primo1.png" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento8"/></div>
+		<div id="imagen9"><img src="imagenes/bebe.jpg" width="100" height="100" draggable="true"  ondragstart="mover_objeto(event,this)"  id="elemento7"/></div>
+		</div>
+		<div id="cont2">
+			<div id="cuadro1" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Abuela </div>
+			<div id="cuadro2" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Papá </div>
+			<div id="cuadro3" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Mamá </div>
+			<div id="cuadro4" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Hermana </div>
+			<div id="cuadro5" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Hermano </div>
+			<div id="cuadro6" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Abuelo </div>
+			<div id="cuadro7" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Bebé </div>
+			<div id="cuadro8" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Primo </div>
+			<div id="cuadro9" ondragover="mientras_arrastra(event)" ondrop="soltar_objeto(event,this)">Tía </div>
+		</div>
+	
+		
+
+<div id="contContador" >
+  <div  id="buenas" />Correctas</div>
+  <div id="buenasTxt"> </div>
+
+ <div  id="malas" />Incorrectas</div>
+  <div id="malasTxt"> </div>
+ </div>
+<ul class="breadcrumb" style="width: 35%; height: 25px;margin-top:-200px;margin-left:-3px;background-color:lightblue;position: absolute;border:2px solid white">
+              <li>Unidad 1 &rsaquo;</li>
+              <li>Derecho a tener una familia &rsaquo;</li>
+              <li>Actividad 2</li></br>
+            </ul>
+            <style>
+/* Bread Crum  (migas de pan)*/
+ul.breadcrumb li {
+ float: left;
+ font-size: 100%;
+ padding: 5px 0 0 5px;
+  text-decoration: none;
+  list-style:none
+}
+ 
+ul.breadcrumb li a {
+  font-size: 100%;
+  padding:  0 14px;
+  text-decoration: none;
+  list-style:none
+}
+ 
+ul.breadcrumb li strong {
+ color: #4b7d71;
+ font-weight: 900;
+ padding: 0 2px;
+  text-decoration: none;
+  list-style:none
+}
+</style>
+</body>
+</html>

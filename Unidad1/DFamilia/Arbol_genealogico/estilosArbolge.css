@@ -1,0 +1,265 @@
+* { margin: 0 auto; padding: 0;  } 
+/*estilo de título y subtítulo*/
+h1 { font:bold 1.5em helvetica; text-align: center; color: navy; margin: 0.5em; }
+h2 { font: bold 1em helvetica; text-align: center; margin: 0.5em; }
+/*estilo de contenedores*/
+#cont0 { width: 100%; height: 85%; background-image:url(imagenes/fondo_cantante.png);}
+#enunciado {width: 100%; height: 80px; }
+#cont1 { width: 30%; height: 420px;  float: left; overflow: auto; text-align:center;}
+#cont2 { width: 70%; height: 420px;  float: left; overflow: auto; text-align:center;}
+
+
+.flecha .punta{ 
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent; 
+  border-bottom: 5px solid transparent; 
+  border-right:5px solid #25aa00; 
+  position:relative; 
+  top:0px; 
+  left:0px; 
+} 
+hr {
+  background-color: red;
+}
+#cuadro1{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 25%; 
+	left: 40%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro2{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 25%; 
+	left: 45%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro3{ 
+	position: absolute;
+	width:60px;
+	height: 50px; 
+	top: 25%; 
+	left: 60%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro4{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 40%; 
+	left: 35%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro5{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 40%; 
+	left: 40%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro6{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 40%; 
+	left: 45%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro7{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 40%; 
+	left: 55%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro8{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 40%; 
+	left: 60%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro9{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 40%; 
+	left: 65%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro10{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 55%; 
+	left: 35%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro11{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 55%; 
+	left: 47%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro12{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 55%; 
+	left: 53%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+#cuadro13{ 
+	position: absolute;
+	width:50px;
+	height: 50px; 
+	top: 55%; 
+	left: 65%;
+	background-color:#E0F8F7;
+	margin: 0.1em; 
+	font-size:15px ; 
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 3px solid  #006;
+}
+
+#imagen1,#imagen2,#imagen3,#imagen4,#imagen5,#imagen6,#imagen7,#imagen8,#imagen9,
+#imagen10,#imagen11,#imagen12,#imagen13
+{ 
+	width:30%; height: 80px;
+	float:left; text-align:center;}
+
+
+#arbol{
+	position: absolute;
+	width: 55%;
+	height: 75%;
+	top: 13%;
+	left: 30%;
+	text-align: center;
+	font-weight: bold;
+	text-align: center;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: ridge;
+	border-left-style: ridge;
+	border-radius:25%;
+}
+
+#boton3{
+	position:absolute;
+    border-radius    : 100%;                                /* Borde redondeado                */
+	width            : 170px;                                 /* Ancho a 0                       */
+	height           : 90px;                                 /* Altura a 0                      */
+	top:200px;                          /* Color del fondo rojo            */
+    left:90%;	                                /* left al 50%                     */
+	transform        : translateX(-50%) translateY(-50%);   /* Transformación para el centrado */
+	cursor: pointer;
+	color: #00F;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bolder;
+	font-variant: small-caps;
+	text-transform: uppercase;
+}
+#boton3:hover, #boton1:active { width:220px }
+#boton2{
+	position:absolute;
+	border-radius    : 100%;                                /* Borde redondeado                */
+	width            : 120px;                                 /* Ancho a 0                       */
+	height           : 115px;                                 /* Altura a 0                      */
+	top:55%; 
+	left:90%;                         /* Color del fondo rojo            */
+	float: right;                                /* left al 50%                     */
+	transform        : translateX(-50%) translateY(-50%);   /* Transformación para el centrado */
+	cursor: pointer;
+	color: #00F;
+	font-size: 24px;
+	font-style: italic;
+	font-weight: bolder;
+	font-variant: small-caps;
+	text-transform: uppercase;
+}
+#boton2:hover, #boton1:active { width:150px; height:150px; }

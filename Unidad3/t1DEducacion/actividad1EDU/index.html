@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device.width, initial-scale=1" />
+<meta http-equiv="Content-Tipe" content="text/html; charset=utf-8">
+<link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
+<link href="css/temas.min.css" rel="stylesheet" type="text/css" />
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/arrastre.js"></script>
+
+
+
+</head>
+<body> 
+
+<!-- PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1PAGINA 1-->
+
+        <!-- 1columna-->
+
+        <div id="fondo" href="#" data-role="button" data-transition="slide"><img src="img/fondo.png" width="800"  height="470"></div>
+<!--arañas-->
+        
+        <div>
+
+        <video src="videop.mp4" id="video" width="550" height="475" controls></video> 
+        <div id="pregunta1" href="#" data-role="button" data-transition="slide"><img src="img/pregunta1.png" width="800"  height="470"></div>
+        <div id="pregunta2" href="#" data-role="button" data-transition="slide"><img src="img/pregunta2.png" width="800"  height="470"></div>
+        <div id="pregunta3" href="#" data-role="button" data-transition="slide"><img src="img/pregunta3.png" width="800"  height="470"></div>
+                          
+        </div>
+        <div>
+            
+        <div id="correcto1" href="#" data-role="button" data-transition="slide"><img src="img/correcto1.png" width="800"  height="470"></div>
+        <div id="correcto2" href="#" data-role="button" data-transition="slide"><img src="img/correcto1.png" width="800"  height="470"></div>
+        <div id="incorrecto1" href="#" data-role="button" data-transition="slide"><img src="img/incorrecto1.png" width="800"  height="470"></div>
+        <div id="incorrecto2" href="#" data-role="button" data-transition="slide"><img src="img/incorrecto2.png" width="800"  height="470"></div>
+        <div id="incorrecto3" href="#" data-role="button" data-transition="slide"><img src="img/incorrecto3.png" width="800"  height="470"></div>
+
+        </div>
+
+        <div id="continuar" href="#" data-role="button" data-transition="slide"><img src="img/continuar.png" width="130"  height="50"></div>
+        <div id="continuar2" href="#" data-role="button" data-transition="slide"><img src="img/continuar.png" width="130"  height="50"></div>
+        <div id="continuar3" href="#" data-role="button" data-transition="slide"><img src="img/continuar.png" width="130"  height="50"></div>
+        <div id="flecha1m" href="#" data-role="button" data-transition="slide"><img src="img/correctomal.png" width="150"  height="60"></div>
+        <div id="flecha2b" href="#" data-role="button" data-transition="slide"><img src="img/incorrectobien.png" width="150"  height="60"></div>
+        <div id="flecha3b" href="#" data-role="button" data-transition="slide"><img src="img/incorrectobien2.png" width="150"  height="60"></div>
+        <div id="flecha4m" href="#" data-role="button" data-transition="slide"><img src="img/correctomal2.png" width="150"  height="60"></div>
+        <div id="flecha5b" href="#" data-role="button" data-transition="slide"><img src="img/correctobien.png" width="150"  height="60"></div>
+        <div id="flecha6m" href="#" data-role="button" data-transition="slide"><img src="img/incorrectomal.png" width="150"  height="60"></div>
+        <div id="correcto3" href="#" data-role="button" data-transition="slide"><img src="img/correcto3.png" width="800"  height="470"></div>
+        <div id="mensaje" href="#" data-role="button" data-transition="slide"><img src="img/mensaje.png" width="800"  height="470"></div>
+        <div id="continuar4" href="#" data-role="button" data-transition="slide"><img src="img/continuar.png" width="130"  height="50"></div>
+        <div id="educacion" href="#" data-role="button" data-transition="slide"><img src="img/educacion.png" width="800"  height="45"></div>
+ 
+<div id="botonmensaje" onclick="mensaje()"><img src="img/sonido.png" width="80"  height="80"></div>
+<div id="botonayuda" onclick="ayuda()"><img src="img/ayuda.png" width="80"  height="80"></div>
+
+        
+
+<!-- mensaje-->
+<script>
+var audio1 = new Audio();
+                audio1.src="mensaje.mp3";
+       function mensaje(){
+                audio1.play();
+
+       } 
+</script>
+
+<!-- mensaje-->
+<!-- ayuda-->
+<script>
+var audio2 = new Audio();
+                audio2.src="ayuda.mp3";
+       function ayuda(){
+                audio2.play();
+
+       } 
+</script>
+
+<!-- ayuda-->
+
+
+
+</body>
+
+
+
+</html>

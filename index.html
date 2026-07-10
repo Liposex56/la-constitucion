@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Constitución y derechos humanos</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <script src="js/codigo.js" defer></script>
+</head>
+<body class="intro-running">
+  <audio id="sonido_ayuda" src="sonido/ayuda.mp3"></audio>
+  <audio id="sonido_creditos" src="sonido/creditos.mp3"></audio>
+  <audio id="sonido_juego" src="sonido/juego.mp3"></audio>
+
+  <div class="intro-overlay" id="introOverlay" aria-label="Animación de apertura">
+    <div class="intro-book" aria-hidden="true">
+      <div class="intro-spread">
+        <div class="intro-page left-page">
+          <span>Artículo 41</span>
+          <strong>Constitución e instrucción cívica</strong>
+          <p>La escuela abre la puerta a la participación democrática.</p>
+        </div>
+        <div class="intro-page right-page">
+          <span>Derechos fundamentales</span>
+          <strong>Vida, igualdad, educación y participación</strong>
+          <p>Una ruta de aprendizaje para reconocer, practicar y evaluar.</p>
+        </div>
+      </div>
+      <div class="intro-cover">
+        <span class="seal">CP</span>
+        <strong>Constitución Política</strong>
+        <small>Colombia</small>
+      </div>
+    </div>
+    <div class="intro-caption">
+      <p class="kicker">Apertura</p>
+      <h1>Constitución Política</h1>
+      <p>La aplicación se abre desde la Constitución y sus derechos fundamentales.</p>
+      <button class="primary-button" type="button" id="skipIntroButton">Entrar</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" data-view="inicio">
+      <img src="imagenes/logo-ddhh.svg" alt="Logo Derechos Humanos" />
+      <span>
+        <strong>Constitución Política</strong>
+        <small>Derechos humanos en Colombia</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <button class="nav-link active" type="button" data-view="inicio">Inicio</button>
+      <button class="nav-link" type="button" data-view="constitucion">Constitución</button>
+      <button class="nav-link" type="button" data-view="unidad-1">Unidad 1</button>
+      <button class="nav-link" type="button" data-view="unidad-2">Unidad 2</button>
+      <button class="nav-link" type="button" data-view="unidad-3">Unidad 3</button>
+      <button class="nav-link locked-link" type="button" data-view="evaluacion" id="evaluationNav">Evaluación</button>
+      <button class="nav-link" type="button" data-open-path="juego/index.html" data-title="Juego integrador">Juego</button>
+      <button class="nav-link" type="button" id="creditsButton">Créditos</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="student-hud" aria-label="Progreso general">
+      <div>
+        <p class="kicker">Ruta de progreso</p>
+        <strong id="hudTitle">Nivel 1 · Primer derecho</strong>
+      </div>
+      <div class="hud-progress">
+        <span id="progressText">0 de 24</span>
+        <div class="progress-track"><div id="progressBar"></div></div>
+      </div>
+      <div class="hud-badges" id="hudBadges" aria-label="Insignias"></div>
+    </section>
+
+    <section class="book-hero app-view active-view" id="inicio" data-view-panel="inicio">
+      <div class="book-copy">
+        <p class="kicker">Aula interactiva</p>
+        <h1>Derechos humanos desde la Constitución.</h1>
+        <p>Después de la apertura, entra a la base constitucional, estudia cada unidad por derechos y abre las actividades cuando las necesites.</p>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-view="constitucion">Ver Constitución</button>
+          <button class="secondary-button" type="button" data-view="unidad-1">Ir a Unidad 1</button>
+          <button class="secondary-button" type="button" data-open-path="juego/index.html" data-title="Juego integrador">Juego</button>
+        </div>
+      </div>
+
+      <div class="home-panel" aria-label="Resumen de la ruta">
+        <article>
+          <span>1</span>
+          <strong>Constitución</strong>
+          <p>Artículos clave para justificar el estudio de derechos humanos.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <strong>Unidades</strong>
+          <p>Cada derecho se agrupa en una sola fila con sus actividades.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <strong>Juego</strong>
+          <p>Reto integrador abierto en un panel centrado.</p>
+        </article>
+        <article>
+          <span>4</span>
+          <strong>Evaluación final</strong>
+          <p>Solo se desbloquea cuando termines todas las misiones.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="constitution-section app-view" id="constitucion" data-view-panel="constitucion">
+      <div class="section-head">
+        <p class="kicker">Marco legal colombiano</p>
+        <h2>Por qué este software debe enseñar derechos humanos</h2>
+        <p>La Constitución no es decoración: es el punto de partida pedagógico. Estos artículos conectan directamente con colegios, universidades y derechos fundamentales.</p>
+      </div>
+
+      <div class="law-grid">
+        <article class="law-card featured">
+          <span>Artículo 41</span>
+          <h3>Constitución e instrucción cívica</h3>
+          <p>En instituciones de educación oficiales o privadas es obligatorio estudiar la Constitución y la instrucción cívica. También se deben fomentar prácticas democráticas.</p>
+          <a href="https://www.secretariasenado.gov.co/senado/basedoc/constitucion_politica_1991_pr001.html" target="_blank" rel="noopener">Fuente oficial</a>
+        </article>
+
+        <article class="law-card">
+          <span>Artículo 44</span>
+          <h3>Derechos fundamentales de niños y niñas</h3>
+          <p>Incluye vida, salud, nombre, nacionalidad, familia, cuidado, amor, educación, cultura, recreación y protección.</p>
+          <a href="https://pdba.georgetown.edu/Constitutions/Colombia/colombia91.pdf" target="_blank" rel="noopener">Texto constitucional</a>
+        </article>
+
+        <article class="law-card">
+          <span>Artículo 67</span>
+          <h3>Educación y derechos humanos</h3>
+          <p>La educación debe formar en el respeto a los derechos humanos, la paz, la democracia, el trabajo y la recreación.</p>
+          <a href="https://colombia.justia.com/nacionales/constitucion-politica-de-colombia/titulo-ii/capitulo-2/" target="_blank" rel="noopener">Ver artículo</a>
+        </article>
+      </div>
+
+      <div class="rights-strip" aria-label="Derechos destacados">
+        <button type="button" data-right="vida">Vida</button>
+        <button type="button" data-right="igualdad">Igualdad</button>
+        <button type="button" data-right="educacion">Educación</button>
+        <button type="button" data-right="salud">Salud</button>
+        <button type="button" data-right="familia">Familia</button>
+        <button type="button" data-right="participacion">Participación</button>
+      </div>
+
+      <div class="right-detail" id="rightDetail">
+        <strong>Derecho a la vida</strong>
+        <p>La vida es inviolable y es la base para ejercer los demás derechos.</p>
+      </div>
+
+      <div class="challenge-section inner-challenge">
+        <div>
+          <p class="kicker">Reto rápido</p>
+          <h2 id="challengeQuestion">¿Qué artículo obliga a estudiar la Constitución?</h2>
+        </div>
+        <div class="challenge-options" id="challengeOptions"></div>
+        <p class="challenge-result" id="challengeResult" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="activities-section app-view" id="unidad-1" data-view-panel="unidad-1">
+      <div class="section-head compact">
+        <p class="kicker">Ruta de aprendizaje</p>
+        <h2>Unidad 1</h2>
+        <p>Vida, desarrollo, identidad y familia. Cada actividad queda separada, con aire y botones claros.</p>
+      </div>
+      <div class="learning-map">
+        <article class="lesson-panel main-lesson">
+          <p class="kicker">Teoría aplicada</p>
+          <h3>La primera red de protección</h3>
+          <p>La Unidad 1 muestra que los derechos de la niñez no son piezas separadas. La vida necesita cuidado; el desarrollo necesita oportunidades; la identidad necesita nombre, historia y reconocimiento; la familia debe ser un entorno de protección.</p>
+          <div class="concept-web">
+            <span>Vida</span>
+            <span>Cuidado</span>
+            <span>Identidad</span>
+            <span>Familia</span>
+            <span>Desarrollo</span>
+          </div>
+        </article>
+        <article class="lesson-panel case-panel">
+          <h3>Caso para pensar</h3>
+          <p>Si un niño tiene nombre y familia, pero no recibe cuidado, ¿qué derecho se debilita primero?</p>
+          <ul>
+            <li>Observa la situación.</li>
+            <li>Relaciona el derecho afectado.</li>
+            <li>Propón una acción protectora.</li>
+          </ul>
+        </article>
+        <article class="lesson-panel visual-note">
+          <h3>Infografía rápida</h3>
+          <div class="rights-meter">
+            <strong>4</strong>
+            <span>derechos conectados</span>
+          </div>
+          <p>Completa las actividades para ver cómo cada derecho sostiene al siguiente.</p>
+        </article>
+      </div>
+      <div class="activity-tools unit-tools">
+        <label class="search-box">
+          <span>Buscar en esta unidad</span>
+          <input id="activitySearch" type="search" placeholder="Ej: vida, identidad, familia" autocomplete="off" />
+        </label>
+        <button class="secondary-button reset-button" type="button" id="resetProgress">Reiniciar progreso</button>
+      </div>
+      <div class="activity-grid" id="activityGridUnidad1"></div>
+    </section>
+
+    <section class="activities-section app-view" id="unidad-2" data-view-panel="unidad-2">
+      <div class="section-head compact">
+        <p class="kicker">Ruta de aprendizaje</p>
+        <h2>Unidad 2</h2>
+        <p>Participación, igualdad, protección y juego. Actividades separadas para navegar sin amontonamiento.</p>
+      </div>
+      <div class="learning-map">
+        <article class="lesson-panel main-lesson">
+          <p class="kicker">Mapa de convivencia</p>
+          <h3>Democracia cotidiana</h3>
+          <p>Participar significa poder opinar y ser escuchado. La igualdad evita discriminaciones. La protección cuida frente a riesgos. El juego desarrolla imaginación, lenguaje, movimiento y convivencia.</p>
+          <div class="step-route">
+            <span>Escuchar</span>
+            <span>Respetar</span>
+            <span>Proteger</span>
+            <span>Jugar</span>
+          </div>
+        </article>
+        <article class="lesson-panel case-panel">
+          <h3>Situación problema</h3>
+          <p>En un grupo, solo algunos pueden hablar y otros quedan por fuera del juego. ¿Qué derechos aparecen?</p>
+          <ul>
+            <li>Participación.</li>
+            <li>Igualdad.</li>
+            <li>Juego y desarrollo.</li>
+          </ul>
+        </article>
+        <article class="lesson-panel visual-note">
+          <h3>Semáforo de derechos</h3>
+          <div class="traffic-rights"><span></span><span></span><span></span></div>
+          <p>Rojo: exclusión. Amarillo: alerta. Verde: participación respetuosa.</p>
+        </article>
+      </div>
+      <div class="activity-grid" id="activityGridUnidad2"></div>
+    </section>
+
+    <section class="activities-section app-view" id="unidad-3" data-view-panel="unidad-3">
+      <div class="section-head compact">
+        <p class="kicker">Ruta de aprendizaje</p>
+        <h2>Unidad 3</h2>
+        <p>Educación, salud, trabajo infantil y discapacidad. Vista independiente con recursos bien distribuidos.</p>
+      </div>
+      <div class="learning-map">
+        <article class="lesson-panel main-lesson">
+          <p class="kicker">Ruta de cuidado integral</p>
+          <h3>Aprender con salud, protección e inclusión</h3>
+          <p>La escuela protege cuando enseña, cuida y adapta sus espacios. La salud permite aprender mejor. La protección contra el trabajo infantil defiende el tiempo de juego y estudio. La inclusión garantiza acceso real para todos.</p>
+          <div class="cycle-map">
+            <span>Educación</span>
+            <span>Salud</span>
+            <span>Protección</span>
+            <span>Inclusión</span>
+          </div>
+        </article>
+        <article class="lesson-panel case-panel">
+          <h3>Decisión ciudadana</h3>
+          <p>Si una niña no puede participar por una barrera física o social, la solución no es apartarla: es ajustar el entorno.</p>
+          <ul>
+            <li>Identificar barrera.</li>
+            <li>Proponer apoyo.</li>
+            <li>Garantizar participación.</li>
+          </ul>
+        </article>
+        <article class="lesson-panel visual-note">
+          <h3>Clave de inclusión</h3>
+          <div class="inclusion-grid"><span>Acceso</span><span>Apoyo</span><span>Respeto</span><span>Participación</span></div>
+        </article>
+      </div>
+      <div class="activity-grid" id="activityGridUnidad3"></div>
+    </section>
+
+    <section class="evaluation-section app-view" id="evaluacion" data-view-panel="evaluacion">
+      <div class="section-head compact">
+        <p class="kicker">Evaluación final</p>
+        <h2>Reto final de derechos humanos</h2>
+        <p id="evaluationIntro">Completa todas las actividades para desbloquear esta evaluación interactiva.</p>
+      </div>
+      <div id="evaluationContent"></div>
+    </section>
+  </main>
+
+  <dialog id="activityDialog" class="activity-dialog">
+    <div class="viewer-head">
+      <div>
+        <p class="kicker">Actividad abierta</p>
+        <h2 id="viewerTitle">Actividad</h2>
+      </div>
+      <div class="viewer-actions">
+        <button class="secondary-button" type="button" id="helpButton">Ayuda</button>
+        <a class="primary-link" id="openInNewTab" href="sonido/inicio/index.html" target="_blank" rel="noopener">Abrir aparte</a>
+        <button class="primary-button" type="button" id="completeActivityButton">Finalizar actividad</button>
+        <button class="secondary-button" type="button" id="closeActivityButton">Cerrar</button>
+      </div>
+    </div>
+    <div class="frame-stage">
+      <iframe id="contentFrame" src="sonido/inicio/index.html" title="Contenido interactivo"></iframe>
+    </div>
+  </dialog>
+
+  <dialog id="creditsDialog">
+    <form method="dialog">
+      <button class="dialog-close" aria-label="Cerrar">x</button>
+      <p class="kicker">Créditos y fuentes</p>
+      <h2>Software educativo sobre derechos humanos</h2>
+      <p>Actualización de interfaz, organización de unidades, progreso y entrada interactiva basada en la Constitución Política de Colombia.</p>
+      <ul>
+        <li>Constitución Política de Colombia, Art. 41: estudio de la Constitución e instrucción cívica.</li>
+        <li>Art. 44: derechos fundamentales de los niños y las niñas.</li>
+        <li>Art. 67: educación para derechos humanos, paz y democracia.</li>
+      </ul>
+      <button class="primary-button" type="submit">Cerrar</button>
+    </form>
+  </dialog>
+</body>
+</html>
+

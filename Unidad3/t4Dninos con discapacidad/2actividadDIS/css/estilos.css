@@ -1,0 +1,56 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#gusto1,#gusto2,#gusto3,#gusto4{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 436px;
+	top: 355px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 446px;
+	top: 360px;	
+	display: table-cell;
+	}
+
+#conductor{
+	position:absolute;
+	top:184px;
+	left:400px;
+}
+#risas{
+	position:absolute;
+	top:147px;
+	left:354px;
+}
+#ignorar{
+	position:absolute;
+	top:80px;
+	left:180px;
+}
+#stop{
+	position:absolute;
+	top:244px;
+	left:150px;
+}
+#niño{
+	position:absolute;
+	top:294px;
+	left:320px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:0px;
+	left:820px;
+}

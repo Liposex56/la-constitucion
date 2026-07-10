@@ -1,0 +1,47 @@
+
+#fondo,#superado,#paisaje,#cuento,#incorrecto{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 700px;
+	top: 340px;	
+	display: table-cell;
+	}
+#reintentar{
+	
+	position: absolute;
+	left: 680px;
+	top: 320px;	
+	display: table-cell;
+	}
+
+#pieza1,#pieza2,#pieza3,#pieza4{
+	position:absolute;
+	top:13px;
+	left:140px;
+}
+
+#opcion2,#opcion4,#opcion8,#opcion10{
+	position:absolute;
+	top:100px;
+	left:170px;
+}
+#opcion1,#opcion5,#opcion9,#opcion12{
+	position:absolute;
+	top:100px;
+	left:435px;
+}
+#opcion3,#opcion6,#opcion7,#opcion11{
+	position:absolute;
+	top:100px;
+	left:700px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:390px;
+	left:970px;
+}

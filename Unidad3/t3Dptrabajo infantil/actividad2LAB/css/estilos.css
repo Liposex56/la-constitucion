@@ -1,0 +1,54 @@
+
+#fondo,#fondo2,#fondo3,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#correcto1,#correcto2,#correcto3,#incorrecto1,#incorrecto2,#incorrecto3,#incorrecto4,#incorrecto5,#incorrecto6,
+#incorrecto7,#incorrecto8,#incorrecto9,#mensaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 446px;
+	top: 355px;	
+	display: table-cell;
+	}
+#continuar,#continuar2,#continuar3,#continuar4{
+	
+	position: absolute;
+	left: 446px;
+	top: 355px;	
+	display: table-cell;
+	}
+
+#cuadro1c,#cuadro6,#cuadro12{
+	position:absolute;
+	top:297px;
+	left:740px;
+}
+#cuadro2,#cuadro5c,#cuadro11{
+	position:absolute;
+	top:117px;
+	left:150px;
+}
+#cuadro3,#cuadro7,#cuadro9c{
+	position:absolute;
+	top:117px;
+	left:740px;
+}
+#cuadro4,#cuadro8,#cuadro10{
+	position:absolute;
+	top:297px;
+	left:150px;
+}
+#botonmensaje,#botonayuda{
+	position: absolute;
+	top: 0px;
+	left: 120px;
+}
+
+

@@ -1,0 +1,72 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#gusto1,#gusto2,#gusto3,#gusto4{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 456px;
+	top: 345px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 590px;
+	top: 325px;	
+	display: table-cell;
+	}
+
+#piezan{
+	position:absolute;
+	top:115px;
+	left:297px;
+}
+#pieza2n{
+	position:absolute;
+	top:115px;
+	left:415px;
+}
+
+#pieza3n{
+	position:absolute;
+	top:115px;
+	left:535px;
+}
+#pieza4n{
+	position:absolute;
+	top:115px;
+	left:655px;
+}
+#niño1{
+	position:absolute;
+	top:261px;
+	left:600px;
+}
+#niño2{
+	position:absolute;
+	top:240px;
+	left:287px;
+}
+#niño3{
+	position:absolute;
+	top:290px;
+	left:750px;
+}
+#niño4{
+	position:absolute;
+	top:250px;
+	left:150px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:0px;
+	left:950px;
+}

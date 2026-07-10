@@ -1,0 +1,56 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#gusto1,#gusto2,#gusto3,#gusto4,#gusto5{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 436px;
+	top: 375px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 606px;
+	top: 320px;	
+	display: table-cell;
+	}
+
+#libro1{
+	position:absolute;
+	top:384px;
+	left:800px;
+}
+#libro2{
+	position:absolute;
+	top:107px;
+	left:454px;
+}
+#libro3{
+	position:absolute;
+	top:80px;
+	left:880px;
+}
+#libro4{
+	position:absolute;
+	top:404px;
+	left:220px;
+}
+#libro5{
+	position:absolute;
+	top:176px;
+	left:230px;
+}
+#botonlibro1,#botonlibro2,#botonlibro3,#botonlibro4,#botonlibro5,#botonayuda{
+	position:absolute;
+	top:30px;
+	left:50px;
+}

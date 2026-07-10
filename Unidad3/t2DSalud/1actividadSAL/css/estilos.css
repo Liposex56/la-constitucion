@@ -1,0 +1,52 @@
+
+
+#fondo,#fondo2,#historia1,#historia2,#historia3,#historia4,#pregunta1,#pregunta2,#pregunta3,#pregunta4,#resultados,
+#resultado1,#resultado2,#resultado3,#resultado4,#resultado5,#resultado6,#resultado7,#resultado8,#resultado9,
+#resultado10,#resultado11,#resultado12,#resultado13,#resultado14,#resultado15{
+	position:absolute;
+	top:0px; 
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 610px;
+	top: 340px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 440px;
+	top: 330px;	
+	display: table-cell;
+	}
+#feliz{
+	
+	position: absolute;
+	left: 150px;
+	top: 330px;	
+	display: table-cell;
+	}
+
+#triste{
+	
+	position: absolute;
+	left: 450px;
+	top: 330px;	
+	display: table-cell;
+	}
+#molesto{
+	
+	position: absolute;
+	left: 770px;
+	top: 330px;	
+	display: table-cell;
+	}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:0px; 
+	left:120px;
+}
+
+

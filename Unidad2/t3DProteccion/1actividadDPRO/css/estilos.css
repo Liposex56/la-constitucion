@@ -1,0 +1,91 @@
+
+#fondo,#superado,#paisaje,#instruccion{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 446px;
+	top: 355px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 650px;
+	top: 355px;	
+	display: table-cell;
+	}
+
+#piezan{
+	position:absolute;
+	top:100px;
+	left:545px;
+}
+#pieza2n{
+	position:absolute;
+	top:170px;
+	left:462px;
+}
+
+#pieza3n{
+	position:absolute;
+	top:240px;
+	left:467px;
+}
+#pieza4n{
+	position:absolute;
+	top:248px;
+	left:835px;
+}
+#pieza5n{
+	position:absolute;
+	top:325px;
+	left:880px;
+}
+#pieza6n{
+	position:absolute;
+	top:397px;
+	left:542px;
+}
+#palabra1{
+	position:absolute;
+	top:418px;
+	left:170px;
+}
+#palabra2{
+	position:absolute;
+	top:278px;
+	left:170px;
+}
+#palabra3{
+	position:absolute;
+	top:358px;
+	left:170px;
+}
+#palabra4{
+	position:absolute;
+	top:118px;
+	left:170px;
+}
+#palabra5{
+	position:absolute;
+	top:200px;
+	left:170px;
+}
+#palabra6{
+	position:absolute;
+	top:54px;
+	left:170px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:30px;
+	left:10px;
+}
+
+
+
+

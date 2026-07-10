@@ -1,0 +1,74 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 720px;
+	top: 425px;	
+	display: table-cell;
+	}
+
+#pieza2n,#pieza2c{
+	position:absolute;
+	top:58px;
+	left:517px;
+}
+#piezan,#piezac{
+	position:absolute;
+	top:58px;
+	left:337px;
+}
+#pieza3n,#pieza3c{
+	position:absolute;
+	top:159px;
+	left:337px;
+}
+#pieza4n,#pieza4c{
+	position:absolute;
+	top:159px;
+	left:517px;
+}
+#pieza5n,#pieza5c{
+	position:absolute;
+	top:260px;
+	left:337px;
+}
+#pieza6n,#pieza6c{
+	position:absolute;
+	top:260px;
+	left:517px;
+}
+#pieza{
+	position:absolute;
+	top:20px;
+	left:720px;
+}
+#pieza2{
+	position:absolute;
+	top:20px;
+	left:137px;
+}
+#pieza3{
+	position:absolute;
+	top:178px;
+	left:720px;
+}
+#pieza4{
+	position:absolute;
+	top:178px;
+	left:137px;
+}
+#pieza5{
+	position:absolute;
+	top:330px;
+	left:137px;
+}
+#pieza6{
+	position:absolute;
+	top:330px;
+	left:720px;
+}

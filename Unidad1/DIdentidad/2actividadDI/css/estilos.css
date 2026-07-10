@@ -1,0 +1,97 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 276px;
+	top: 355px;	
+	display: table-cell;
+	}
+
+#piezan,#piezac{
+	position:absolute;
+	top:109px;
+	left:243px;
+}
+#pieza2n,#pieza2c{
+	position:absolute;
+	top:278px;
+	left:243px;
+}
+
+#pieza3n,#pieza3c{
+	position:absolute;
+	top:356px;
+	left:243px;
+}
+#pieza4n,#pieza4c{
+	position:absolute;
+	top:8px;
+	left:637px;
+}
+#pieza5n,#pieza5c{
+	position:absolute;
+	top:8px;
+	left:827px;
+}
+#pieza6n,#pieza6c{
+	position:absolute;
+	top:8px;
+	left:965px;
+}
+#amarillo{
+	position:absolute;
+	top:355px;
+	left:855px;
+
+}
+#azul{
+	position:absolute;
+	top:355px;
+	left:125px;
+}
+#rojo{
+	position:absolute;
+	top:238px;
+	left:855px;
+
+}
+#verde{
+	position:absolute;
+	top:238px;
+	left:125px;
+}
+#naranja{
+	position:absolute;
+	top:120px;
+	left:125px;
+}
+#mora{
+	position:absolute;
+	top:120px;
+	left:855px;
+}
+#cafe{
+	position:absolute;
+	top:20px;
+	left:855px;
+}
+#negro{
+	position:absolute;
+	top:20px;
+	left:125px;
+}
+#botonmensaje{
+	position:absolute;
+	top:40px;
+	left:20px;
+}
+#botonayuda{
+	position:absolute;
+	top:40px;
+	left:20px;
+}

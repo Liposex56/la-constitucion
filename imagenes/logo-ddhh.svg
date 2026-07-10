@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Derechos Humanos</title>
+  <desc id="desc">Libro constitucional con ruta de aprendizaje y siglas DDHH</desc>
+  <defs>
+    <linearGradient id="cover" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#9c3f35"/>
+      <stop offset="1" stop-color="#5f2728"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f7f0dc"/>
+      <stop offset="1" stop-color="#e5d5b8"/>
+    </linearGradient>
+  </defs>
+  <circle cx="80" cy="80" r="74" fill="#263238"/>
+  <path d="M36 34h44c14 0 24 10 24 24v70H60c-13 0-24-11-24-24z" fill="url(#cover)" stroke="#d5a84b" stroke-width="6"/>
+  <path d="M80 34h44v70c0 13-11 24-24 24H80z" fill="url(#leaf)" stroke="#d5a84b" stroke-width="6"/>
+  <path d="M88 54h24M88 70h24M88 86h20" stroke="#8a7b65" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="57" cy="67" r="17" fill="none" stroke="#f1d27b" stroke-width="5"/>
+  <text x="57" y="73" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#f1d27b">CP</text>
+  <path d="M47 111c16-11 29-11 44 0 10-9 21-12 34-7" fill="none" stroke="#6f9a55" stroke-width="7" stroke-linecap="round"/>
+  <text x="80" y="147" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="900" fill="#f7f0dc">DDHH</text>
+</svg>

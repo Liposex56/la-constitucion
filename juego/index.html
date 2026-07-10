@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>proteccion contra el trabajo</title>
+
+        <link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/estilos_juego.css" rel="stylesheet" type="text/css" />
+<link href="sweetalert.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery.js" charset="utf-8"></script>
+  <script src="sweetalert.min.js" charset="utf-8"></script>
+        <script src="js/lib/jquery-3.1.0.min.js"></script>
+        <script src="js/lib/jquery-ui.min.js"></script>
+        <script src="js/lib/createjs-2015.11.26.min.js"></script>
+        <script src="js/lib/ndgmr.collision.js"></script>
+
+        <script src="js/lib/delegate.js"></script>
+        <script src="js/lib/keyboardManager.js"></script>
+        <script type="text/javascript" src="js/lib/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery_touch_punch_min.js"></script>
+
+        <script src="js/main.js"></script>
+
+    </head>
+
+    <body>
+    
+        <div id="contenedor">
+            <canvas id="canvas" width="800" height="470">
+	          
+            </canvas>
+        </div>
+
+        <div id="fondo" class="cont"><img id="fondoo" src="imagenes/fondos/paisaje2.png" width="800" height="470"> </div> 
+
+        <div id="unidad1" class="cont"><img id="unidadd1" src="imagenes/unidad1.png" width="188" height="188"> </div> 
+        <div id="unidad2" class="cont"><img id="unidadd2" src="imagenes/unidad2.png" width="188" height="188"> </div> 
+        <div id="unidad3" class="cont"><img id="unidadd3" src="imagenes/unidad3.png" width="188" height="188"> </div> 
+
+        <div id="infounidad1" class="cont"><img id="infounidadd1" src="imagenes/infounidad1.png" width="800" height="470"> </div>
+        <div id="infounidad2" class="cont"><img id="infounidadd2" src="imagenes/infounidad2.png" width="800" height="470"> </div> 
+        <div id="infounidad3" class="cont"><img id="infounidadd3" src="imagenes/infounidad3.png" width="800" height="470"> </div>
+
+        <div id="iniciar" href="#" data-role="button" data-transition="slide"><img src="imagenes/iniciar.png" width="160"  height="70"></div>
+        <div id="continuar" href="#" data-role="button" data-transition="slide"><img src="imagenes/continuar.png" width="100"  height="40"></div>
+
+        <div id="pregunta1" class="cont"><img id="preguntaa1" src="imagenes/pregunta1.png" width="800" height="470"> </div> 
+        <div id="opcion1p1" class="cont"><img id="opcionn1p1" src="imagenes/opcion1p1.png" width="145" height="145"> </div> 
+        <div id="opcion2p1" class="cont"><img id="opcionn2p1" src="imagenes/opcion2p1.png" width="145" height="145"> </div> 
+        <div id="opcion3p1" class="cont"><img id="opcionn3p1" src="imagenes/opcion3p1.png" width="145" height="145"> </div> 
+
+        <div id="pregunta2" class="cont"><img id="preguntaa2" src="imagenes/pregunta2.png" width="800" height="470"> </div> 
+        <div id="opcion1p2" class="cont"><img id="opcionn1p2" src="imagenes/opcion1p2.png" width="145" height="145"> </div> 
+        <div id="opcion2p2" class="cont"><img id="opcionn2p2" src="imagenes/opcion2p2.png" width="145" height="145"> </div> 
+        <div id="opcion3p2" class="cont"><img id="opcionn3p2" src="imagenes/opcion3p2.png" width="145" height="145"> </div> 
+
+        <div id="pregunta3" class="cont"><img id="preguntaa3" src="imagenes/pregunta3.png" width="800" height="470"> </div> 
+        <div id="opcion1p3" class="cont"><img id="opcionn1p3" src="imagenes/opcion1p3.png" width="145" height="145"> </div> 
+        <div id="opcion2p3" class="cont"><img id="opcionn2p3" src="imagenes/opcion2p3.png" width="145" height="145"> </div> 
+        <div id="opcion3p3" class="cont"><img id="opcionn3p3" src="imagenes/opcion3p3.png" width="145" height="145"> </div> 
+
+        <div id="pregunta4" class="cont"><img id="preguntaa4" src="imagenes/pregunta4.png" width="800" height="470"> </div> 
+        <div id="opcion1p4" class="cont"><img id="opcionn1p4" src="imagenes/opcion1p4.png" width="145" height="145"> </div> 
+        <div id="opcion2p4" class="cont"><img id="opcionn2p4" src="imagenes/opcion2p4.png" width="145" height="145"> </div> 
+        <div id="opcion3p4" class="cont"><img id="opcionn3p4" src="imagenes/opcion3p4.png" width="145" height="145"> </div> 
+
+        <div id="incorrecto" class="cont"><img id="incorrectoo" src="imagenes/incorrecto.png" width="800" height="470"> </div> 
+        <div id="continuar2" href="#" data-role="button" data-transition="slide"><img src="imagenes/continuar.png" width="160"  height="60"></div>
+
+        <div id="botonmensaje" onclick="mensaje()"><img src="imagenes/sonido.png" width="80"  height="80"></div>
+        <div id="botonayuda" onclick="ayuda()"><img src="imagenes/ayuda.png" width="60"  height="60"></div>
+        <div id="bien" class="cont"><img id="preguntaa1" src="imagenes/tenor.gif" width="800" height="470"> </div> 
+
+        
+<!-- mensaje-->
+<script>
+var audio1 = new Audio();
+                audio1.src="mensaje.mp3";
+       function mensaje(){
+                audio1.play();
+
+       } 
+</script>
+
+<!-- mensaje-->
+<!-- ayuda-->
+<script>
+var audio2 = new Audio();
+                audio2.src="ayuda.mp3";
+       function ayuda(){
+                audio2.play();
+
+       } 
+</script>
+<!-- ayuda-->
+
+     </body>
+
+</html>

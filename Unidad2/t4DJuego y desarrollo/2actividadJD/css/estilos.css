@@ -1,0 +1,71 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#incorrecto{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 446px;
+	top: 380px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 420px;
+	top: 405px;	
+	display: table-cell;
+	}
+
+#imagen1m{
+	position:absolute;
+	top:124px;
+	left:590px;
+}
+#imagen1b{
+	position:absolute;
+	top:124px;
+	left:194px;
+}
+#imagen2m{
+	position:absolute;
+	top:124px;
+	left:194px;
+}
+#imagen2b{
+	position:absolute;
+	top:124px;
+	left:590px;
+}
+#imagen3m{
+	position:absolute;
+	top:124px;
+	left:590px;
+}
+#imagen3b{
+	position:absolute;
+	top:124px;
+	left:194px;
+}
+#imagen4m{
+	position:absolute;
+	top:124px;
+	left:194px;
+}
+#imagen4b{
+	position:absolute;
+	top:124px;
+	left:590px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:390px;
+	left:20px;
+}

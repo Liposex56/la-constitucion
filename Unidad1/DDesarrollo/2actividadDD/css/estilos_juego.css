@@ -1,0 +1,35 @@
+body{
+	background-color: #9B9BFF;
+	width: 90%;
+}
+#contenedor{
+	
+	position: absolute;
+	top: -12px;
+	left: 120px;
+	
+}
+#buenas{
+	width: 120px;
+	height: 30px;
+	background-color:green;
+	position: absolute;
+	left: 1120px;
+	top: 30px;
+	text-align: center;
+	border-radius: 10px;
+}
+#botonayuda{
+	
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	
+}
+#botonmensaje{
+	
+	position: absolute;
+	top: 370px;
+	left: 840px;
+	
+}

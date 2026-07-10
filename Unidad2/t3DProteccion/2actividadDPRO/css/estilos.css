@@ -1,0 +1,97 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#incorrecto,#correcto{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 436px;
+	top: 345px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 436px;
+	top: 400px;	
+	display: table-cell;
+	}
+
+#verdadero1{
+	position:absolute;
+	top:195px;
+	left:160px;
+}
+#verdadero1m{
+	position:absolute;
+	top:143px;
+	left:160px;
+}
+#verdadero2{
+	position:absolute;
+	top:320px;
+	left:160px;
+}
+#verdadero2m{
+	position:absolute;
+	top:250px;
+	left:160px;
+}
+#verdadero3{
+	position:absolute;
+	top:393px;
+	left:160px;
+}
+#verdadero3m{
+	position:absolute;
+	top:438px;
+	left:160px;
+}
+#falso1{
+	position:absolute;
+	top:145px;
+	left:240px;
+}
+#falso1m{
+	position:absolute;
+	top:193px;
+	left:240px;
+}
+#falso2{
+	position:absolute;
+	top:250px;
+	left:240px;
+}
+#falso2m{
+	position:absolute;
+	top:310px;
+	left:230px;
+}
+#falso3{
+	position:absolute;
+	top:440px;
+	left:240px;
+}
+#falso3m{
+	position:absolute;
+	top:395px;
+	left:230px;
+}
+#botonmensaje{
+	position:absolute;
+	top:435px;
+	left:5px;
+}
+#botonayuda{
+	position:absolute;
+	top:400px;
+	left:10px;
+}
+

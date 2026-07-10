@@ -1,0 +1,15 @@
+cuadro1c=correcto1
+cuadro2=incorrecto1
+cuadro3=incorrecto2
+cuadro4=incorrecto3
+cuadro5c=correcto2
+cuadro6=incorrecto4
+cuadro7=incorrecto5
+cuadro8=incorrecto6
+cuadro9c=correcto3
+cuadro10=incorrecto7
+cuadro11=incorrecto8
+cuadro12=incorrecto9
+
+
+

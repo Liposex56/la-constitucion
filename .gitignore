@@ -1,0 +1,18 @@
+# Archivos de Windows y temporales
+desktop.ini
+Thumbs.db
+*.tmp
+*.bak
+
+# Bloqueos temporales de Microsoft Office
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Copias comprimidas de respaldo, no necesarias para ejecutar la web
+*.rar
+*.zip
+*.7z
+
+# Repositorio vacío/anidado que bloquea el alta en Git
+la-constitucion/

@@ -1,0 +1,79 @@
+
+#pregunta1,#pregunta2,#pregunta3,#pregunta4,#pregunta5,#superado,#paisaje,#parte1,#parte2,#parte3{
+	position:relative;
+	top:-16px;
+	left:120px;
+}
+#incorrecto{
+	position:absolute;
+	top:0px;
+	left:136px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 456px;
+	top: 355px;	
+	display: table-cell;
+	}
+#reintentar{
+	
+	position: absolute;
+	left: 456px;
+	top: 355px;	
+	display: table-cell;
+	}
+#continuar{
+	
+	position: absolute;
+	left: 736px;
+	top: 400px;	
+	display: table-cell;
+	}
+
+#opcion1a{
+	position:absolute;
+	top:194px;
+	left:147px;
+}
+#opcion1b,#opcion1c,#opcion1d,#opcion1e{
+	position:absolute;
+	top:194px;
+	left:147px;
+}
+#opcion2a{
+	position:absolute;
+	top:194px;
+	left:586px;
+}
+#opcion2b,#opcion2c,#opcion2d,#opcion2e{
+	position:absolute;
+	top:194px;
+	left:586px;
+}
+#opcion3a{
+	position:absolute;
+	top:337px;
+	left:147px;
+}
+#opcion3b,#opcion3c,#opcion3d,#opcion3e{
+	position:absolute;
+	top:337px;
+	left:147px;
+}
+#opcion4a{
+	position:absolute;
+	top:337px;
+	left:556px;
+}
+#opcion4b,#opcion4c,#opcion4d,#opcion4e{
+	position:absolute;
+	top:337px;
+	left:576px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:40px;
+	left:20px;
+}
+

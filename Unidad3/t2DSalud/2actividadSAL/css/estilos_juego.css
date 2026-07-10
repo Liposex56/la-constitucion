@@ -1,0 +1,14 @@
+body{
+	background-color: #9B9BFF;
+	width: 90%;
+}
+#contenedor{
+position: absolute;
+top: 0px;
+left: 120px;
+}
+#botonmensaje,#botonayuda{
+position: absolute;
+top: 380px;
+left: 120px;
+}

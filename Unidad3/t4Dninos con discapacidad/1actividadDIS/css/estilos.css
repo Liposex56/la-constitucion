@@ -1,0 +1,60 @@
+
+#fondo,#superado,#paisaje{
+	position:absolute;
+	top:0px;
+	left:120px;
+}
+#iniciar{
+	
+	position: absolute;
+	left: 436px;
+	top: 345px;	
+	display: table-cell;
+	}
+
+#silla{
+	position:absolute;
+	top:270px;
+	left:347px;
+}
+#ciego{
+	position:absolute;
+	top:240px;
+	left:520px;
+}
+
+#sordo{
+	position:absolute;
+	top:287px;
+	left:130px;
+}
+#muletas{
+	position:absolute;
+	top:270px;
+	left:750px;
+}
+#ayudaciego{
+	position:absolute;
+	top:30px;
+	left:128px;
+}
+#ayudasordo{
+	position:absolute;
+	top:30px;
+	left:220px;
+}
+#ayudasilla{
+	position:absolute;
+	top:30px;
+	left:335px;
+}
+#ayudamuletas{
+	position:absolute;
+	top:30px;
+	left:475px;
+}
+#botonmensaje,#botonayuda{
+	position:absolute;
+	top:0px;
+	left:860px;
+}
