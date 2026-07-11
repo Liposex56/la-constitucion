@@ -41,7 +41,16 @@
         <div class="book" id="book">
           <section class="page page-left" id="leftPage"></section>
           <section class="page page-right" id="rightPage"></section>
+          <div class="page-turn" id="pageTurn" aria-hidden="true">
+            <div class="turn-face turn-front"></div>
+            <div class="turn-face turn-back"></div>
+          </div>
         </div>
+        <nav class="mobile-page-nav" aria-label="Páginas del libro">
+          <button type="button" class="mobile-page-button" data-mobile-page="left" aria-label="Ver página izquierda">‹</button>
+          <span id="mobilePageLabel">Página izquierda</span>
+          <button type="button" class="mobile-page-button" data-mobile-page="right" aria-label="Ver página derecha">›</button>
+        </nav>
       </section>
     </main>
 
@@ -72,6 +81,30 @@
         </div>
       </dl>
       <button class="primary-action" type="submit">Cerrar</button>
+    </form>
+  </dialog>
+
+  <dialog class="confirm-dialog" id="confirmDialog">
+    <form method="dialog">
+      <p class="eyebrow">Confirmación</p>
+      <h2>¿Finalizar la evaluación?</h2>
+      <p id="confirmMessage">Podrás revisar tus respuestas antes de enviarla.</p>
+      <div class="dialog-actions">
+        <button class="secondary-action" type="submit" value="cancel">Seguir revisando</button>
+        <button class="primary-action" type="submit" value="confirm" data-confirm-evaluation>Finalizar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="confirm-dialog" id="resetDialog">
+    <form method="dialog">
+      <p class="eyebrow">Reiniciar avance</p>
+      <h2>¿Comenzar desde cero?</h2>
+      <p>Se borrarán las unidades completadas y las respuestas guardadas en este dispositivo.</p>
+      <div class="dialog-actions">
+        <button class="secondary-action" type="submit" value="cancel">Cancelar</button>
+        <button class="danger-action" type="submit" value="confirm" data-confirm-reset>Reiniciar</button>
+      </div>
     </form>
   </dialog>
 </body>
