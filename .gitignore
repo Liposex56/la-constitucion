@@ -16,3 +16,6 @@ Thumbs.db
 
 # Repositorio vacío/anidado que bloquea el alta en Git
 la-constitucion/
+
+# Capturas locales de revisión
+_codex_preview/

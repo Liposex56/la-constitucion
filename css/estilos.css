@@ -1717,3 +1717,472 @@ dialog li {
     min-height: 500px;
   }
 }
+
+/* Estilo editorial tipo libro, inspirado en la referencia Ruta de Paz. */
+:root {
+  --ink: #101828;
+  --muted: #667085;
+  --paper: #fffaf0;
+  --soft: #f6f8fb;
+  --line: #d8dee8;
+  --navy: #101828;
+  --blue: #1d4ed8;
+  --green: #059669;
+  --gold: #facc15;
+  --red: #b4453c;
+  --cyan: #06b6d4;
+  --shadow: 0 18px 48px rgba(16, 24, 40, 0.1);
+  --book-shadow: 0 26px 70px rgba(16, 24, 40, 0.18);
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at 8% 12%, rgba(250, 204, 21, 0.32), transparent 28%),
+    radial-gradient(circle at 88% 10%, rgba(6, 182, 212, 0.24), transparent 27%),
+    radial-gradient(circle at 18% 86%, rgba(249, 115, 22, 0.18), transparent 30%),
+    linear-gradient(135deg, #0a3d60 0%, #f0fdf4 42%, #fff7ed 100%);
+  background-attachment: fixed;
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.72fr) minmax(0, 1.55fr);
+  gap: 18px;
+  align-items: center;
+  padding: 12px clamp(16px, 3vw, 28px);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(216, 222, 232, 0.9);
+  box-shadow: 0 12px 34px rgba(16, 24, 40, 0.08);
+  backdrop-filter: blur(16px);
+}
+
+.brand {
+  min-width: 0;
+  color: var(--ink);
+}
+
+.brand img {
+  width: 62px;
+  height: 62px;
+  padding: 8px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.14);
+}
+
+.brand strong {
+  font-size: 1.15rem;
+  line-height: 1.05;
+}
+
+.brand small {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.main-nav {
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 7px;
+  overflow-x: auto;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+}
+
+.nav-link {
+  min-height: 40px;
+  padding: 0 10px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #fff;
+  background: var(--navy);
+}
+
+main {
+  width: min(1180px, calc(100% - 28px));
+  padding: 24px 0 44px;
+}
+
+.student-hud {
+  grid-template-columns: minmax(230px, 1fr) minmax(240px, 360px) auto;
+  padding: 14px 16px;
+  border-color: rgba(216, 222, 232, 0.9);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
+}
+
+.progress-track {
+  background: #e7edf6;
+}
+
+.progress-track div {
+  background: linear-gradient(90deg, var(--blue), var(--cyan), var(--gold));
+}
+
+.hud-badges span,
+.hud-badges .earned {
+  border-radius: 999px;
+}
+
+.kicker {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  color: var(--ink);
+  background: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.book-hero {
+  position: relative;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+  min-height: min(680px, calc(100vh - 168px));
+  padding: 0;
+  overflow: visible;
+  color: var(--ink);
+  background: transparent;
+  box-shadow: var(--book-shadow);
+  perspective: 1400px;
+}
+
+.book-hero::before {
+  content: "";
+  position: absolute;
+  inset: -18px -22px;
+  z-index: -2;
+  border-radius: 30px;
+  background:
+    linear-gradient(90deg, #9b332f 0 49%, #7e2927 49% 51%, #9b332f 51%),
+    #9b332f;
+  box-shadow: 0 30px 80px rgba(16, 24, 40, 0.24);
+}
+
+.book-hero::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: calc(50% - 1px);
+  width: 2px;
+  z-index: 2;
+  border-radius: 999px;
+  background: linear-gradient(180deg, transparent, rgba(16, 24, 40, 0.28), transparent);
+  box-shadow: 0 0 28px rgba(16, 24, 40, 0.28);
+}
+
+.book-copy,
+.home-panel {
+  position: relative;
+  min-height: 560px;
+  padding: clamp(28px, 5vw, 54px);
+  background:
+    repeating-linear-gradient(0deg, transparent, transparent 33px, rgba(16, 24, 40, 0.06) 34px),
+    linear-gradient(135deg, #fffdf7, #fff5df);
+}
+
+.book-copy {
+  max-width: none;
+  display: grid;
+  align-content: center;
+  border-radius: 22px 0 0 22px;
+  transform: rotateY(2deg);
+  transform-origin: right center;
+}
+
+.home-panel {
+  align-self: stretch;
+  border-radius: 0 22px 22px 0;
+  transform: rotateY(-2deg);
+  transform-origin: left center;
+}
+
+.book-copy::before,
+.home-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.book-copy::before {
+  background: linear-gradient(90deg, transparent, rgba(16, 24, 40, 0.06));
+}
+
+.home-panel::before {
+  background: linear-gradient(90deg, rgba(16, 24, 40, 0.07), transparent);
+}
+
+.book-hero .kicker,
+.challenge-section .kicker {
+  color: var(--ink);
+}
+
+.book-copy h1 {
+  max-width: 560px;
+  font-size: clamp(2.15rem, 4.45vw, 4.15rem);
+  line-height: 0.98;
+}
+
+.book-copy p:not(.kicker) {
+  max-width: 560px;
+  color: var(--muted);
+}
+
+.hero-actions {
+  margin-top: 26px;
+}
+
+.home-panel article {
+  border-color: rgba(216, 222, 232, 0.9);
+  border-radius: 20px;
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.74);
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+}
+
+.home-panel article p {
+  color: var(--muted);
+}
+
+.home-panel article span {
+  color: #fff;
+  background: var(--blue);
+}
+
+.primary-button,
+.primary-link,
+.activity-open {
+  border-radius: 999px;
+  background: var(--blue);
+  box-shadow: 0 12px 28px rgba(29, 78, 216, 0.18);
+}
+
+.secondary-button,
+.activity-done,
+.rights-strip button,
+.challenge-options button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.constitution-section,
+.activities-section,
+.challenge-section,
+.viewer-section,
+.evaluation-section {
+  position: relative;
+  min-height: calc(100vh - 150px);
+  padding: clamp(24px, 4vw, 44px);
+  border: 0;
+  border-radius: 28px;
+  background:
+    linear-gradient(90deg, rgba(16, 24, 40, 0.04), transparent 6%, transparent 94%, rgba(16, 24, 40, 0.04)),
+    repeating-linear-gradient(0deg, transparent, transparent 33px, rgba(16, 24, 40, 0.045) 34px),
+    linear-gradient(135deg, #fffdf7, #fff5df);
+  box-shadow: var(--book-shadow);
+}
+
+.constitution-section::before,
+.activities-section::before,
+.evaluation-section::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  bottom: 22px;
+  left: calc(50% - 1px);
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, transparent, rgba(16, 24, 40, 0.18), transparent);
+  pointer-events: none;
+}
+
+.section-head {
+  max-width: 760px;
+}
+
+.section-head h2,
+.challenge-section h2 {
+  color: var(--ink);
+}
+
+.law-grid,
+.learning-map {
+  position: relative;
+  z-index: 1;
+}
+
+.law-card,
+.lesson-panel,
+.unit-state,
+.evaluation-locked,
+.evaluation-score,
+.final-badge {
+  border-color: rgba(216, 222, 232, 0.9);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 34px rgba(16, 24, 40, 0.08);
+}
+
+.learning-map {
+  grid-template-columns: 1.15fr 0.9fr 0.9fr;
+}
+
+.main-lesson {
+  background:
+    linear-gradient(135deg, rgba(29, 78, 216, 0.1), rgba(250, 204, 21, 0.16)),
+    rgba(255, 255, 255, 0.86);
+}
+
+.activity-grid {
+  position: relative;
+  z-index: 1;
+  gap: 22px;
+}
+
+.topic-card {
+  border: 1px solid rgba(216, 222, 232, 0.9);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 34px rgba(16, 24, 40, 0.08);
+}
+
+.activity-option {
+  border-color: rgba(216, 222, 232, 0.9);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.activity-option.available {
+  border-color: rgba(29, 78, 216, 0.28);
+  background: #eff6ff;
+}
+
+.activity-option.done {
+  border-color: rgba(5, 150, 105, 0.3);
+  background: #ecfdf5;
+}
+
+.activity-option.locked {
+  background: #f6f8fb;
+}
+
+.activity-open:disabled {
+  color: var(--muted);
+  background: #e7edf6;
+  box-shadow: none;
+}
+
+.activity-tools {
+  position: relative;
+  z-index: 1;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.search-box input {
+  border-radius: 16px;
+  background: #fff;
+}
+
+.rights-strip,
+.right-detail,
+.inner-challenge {
+  position: relative;
+  z-index: 1;
+}
+
+.right-detail {
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.activity-dialog {
+  border-radius: 24px;
+  box-shadow: 0 30px 90px rgba(16, 24, 40, 0.34);
+}
+
+.activity-dialog .frame-stage {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(250, 204, 21, 0.22), transparent 30%),
+    linear-gradient(135deg, #f8fafc, #fff7ed);
+}
+
+@media (max-width: 1180px) {
+  .topbar {
+    display: flex;
+  }
+
+  .book-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .book-hero::after {
+    display: none;
+  }
+
+  .book-copy,
+  .home-panel {
+    min-height: auto;
+    transform: none;
+    border-radius: 22px;
+  }
+}
+
+@media (max-width: 720px) {
+  main {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .topbar {
+    border-radius: 0 0 24px 24px;
+  }
+
+  .main-nav {
+    border-radius: 20px;
+  }
+
+  .nav-link {
+    border-radius: 16px;
+  }
+
+  .book-hero::before {
+    inset: -10px;
+    border-radius: 22px;
+  }
+
+  .book-copy,
+  .home-panel,
+  .constitution-section,
+  .activities-section,
+  .evaluation-section {
+    padding: 22px;
+  }
+
+  .constitution-section::before,
+  .activities-section::before,
+  .evaluation-section::before {
+    display: none;
+  }
+}

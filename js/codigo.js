@@ -357,12 +357,12 @@ function renderProgress() {
 
   progressText.textContent = `${percent}% - ${done} de ${total}`;
   progressBar.style.width = `${percent}%`;
-  hudTitle.textContent = allActivitiesDone() ? "Ruta completa - evaluacion final desbloqueada" : nextLockedStep();
+  hudTitle.textContent = allActivitiesDone() ? "Ruta completa - evaluación final desbloqueada" : nextLockedStep();
 
   document.querySelector('[data-view="unidad-2"]')?.classList.toggle("locked-link", !unitUnlocked("unidad-2"));
   document.querySelector('[data-view="unidad-3"]')?.classList.toggle("locked-link", !unitUnlocked("unidad-3"));
   evaluationNav.classList.toggle("locked-link", !allActivitiesDone());
-  evaluationNav.textContent = allActivitiesDone() ? "Evaluacion" : "Evaluacion bloqueada";
+  evaluationNav.textContent = allActivitiesDone() ? "Evaluación" : "Evaluación bloqueada";
 
   hudBadges.innerHTML = badges.map(([label, active]) => (
     `<span class="${active ? "earned" : ""}">${active ? "*" : "-"} ${label}</span>`
@@ -383,7 +383,7 @@ function renderEvaluation() {
     evaluationContent.innerHTML = `
       <div class="evaluation-locked">
         <span>!</span>
-        <h3>Evaluacion final bloqueada</h3>
+        <h3>Evaluación final bloqueada</h3>
         <p>${nextLockedStep()}</p>
         <button class="primary-button" type="button" data-view="${nextUnitView()}">Ir a la unidad pendiente</button>
       </div>
