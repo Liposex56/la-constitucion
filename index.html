@@ -3,9 +3,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Constitución y derechos humanos</title>
+  <title>Constitución Política y derechos humanos</title>
   <link rel="stylesheet" href="css/estilos.css" />
   <script src="js/codigo.js" defer></script>
 </head>
-<body></body>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" data-route="menu" aria-label="Volver al menú principal">
+        <img src="imagenes/logo-ddhh.svg" alt="Logo Derechos Humanos" />
+        <span>
+          <strong>Constitución Política</strong>
+          <small>Libro educativo interactivo</small>
+        </span>
+      </a>
+
+      <button class="top-home" type="button" data-route="menu">
+        <span class="top-home-icon" aria-hidden="true"></span>
+        Inicio
+      </button>
+    </header>
+
+    <main class="library-scene">
+      <section class="cover-screen" id="coverScreen" aria-label="Portada del libro">
+        <div class="closed-book" id="closedBook">
+          <div class="book-spine" aria-hidden="true"></div>
+          <div class="cover-lines" aria-hidden="true"></div>
+          <img src="imagenes/logo-ddhh.svg" alt="" class="cover-logo" />
+          <p class="cover-kicker">Libro interactivo</p>
+          <h1>Constitución Política y derechos humanos</h1>
+          <p class="cover-copy">Explora. Practica. Comprende.</p>
+          <button class="gold-button" type="button" id="openBookButton">Abrir libro</button>
+        </div>
+      </section>
+
+      <section class="book-stage is-hidden" id="bookStage" aria-live="polite">
+        <div class="book" id="book">
+          <section class="page page-left" id="leftPage"></section>
+          <section class="page page-right" id="rightPage"></section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="quote">
+      <p>“La educación es el arma más poderosa que puedes usar para cambiar el mundo.”</p>
+      <span>Nelson Mandela</span>
+    </footer>
+  </div>
+
+  <dialog class="credits-dialog" id="creditsDialog">
+    <form method="dialog">
+      <button class="dialog-close" type="submit" aria-label="Cerrar">×</button>
+      <p class="eyebrow">Créditos</p>
+      <h2>Constitución Política y derechos humanos</h2>
+      <p>Software educativo reconstruido como libro digital interactivo para estudiar derechos fundamentales, Constitución e instrucción cívica.</p>
+      <dl>
+        <div>
+          <dt>Institución</dt>
+          <dd>Universidad Pedagógica y Tecnológica de Colombia</dd>
+        </div>
+        <div>
+          <dt>Base legal</dt>
+          <dd>Constitución Política de Colombia, artículos 41, 44 y 67.</dd>
+        </div>
+        <div>
+          <dt>Recursos</dt>
+          <dd>Actividades educativas existentes, teoría reconstruida y diseño visual tipo libro académico.</dd>
+        </div>
+      </dl>
+      <button class="primary-action" type="submit">Cerrar</button>
+    </form>
+  </dialog>
+</body>
 </html>

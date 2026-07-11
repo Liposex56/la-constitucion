@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="Ilustración de columnas y Constitución">
+  <defs>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#6e6255" stop-opacity=".18"/>
+      <stop offset=".5" stop-color="#6e6255" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#6e6255" stop-opacity=".12"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="none"/>
+  <path d="M26 260c96-42 164-37 244-18 82 20 160 29 244-5 96-39 174-17 250 23" fill="none" stroke="url(#fade)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M59 236h204M80 212h160M103 95h116M93 117h136M90 236V117M125 236V117M160 236V117M195 236V117M230 236V117" fill="none" stroke="#6e6255" stroke-opacity=".44" stroke-width="6" stroke-linecap="round"/>
+  <path d="M96 93 161 56l66 37M66 252h220M77 237h198M101 82h122" fill="none" stroke="#6e6255" stroke-opacity=".38" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M350 78h180c16 0 30 13 30 30v124c0 16-14 30-30 30H350c-16 0-30-14-30-30V108c0-17 14-30 30-30Z" fill="none" stroke="#6e6255" stroke-opacity=".35" stroke-width="8"/>
+  <path d="M440 80v180M360 122h62M360 154h62M360 186h62M460 122h62M460 154h62M460 186h62" fill="none" stroke="#6e6255" stroke-opacity=".38" stroke-width="5" stroke-linecap="round"/>
+  <path d="M625 233h115M646 233v-93M720 233v-93M632 140h100M643 118h78M681 72v46M642 72h78" fill="none" stroke="#6e6255" stroke-opacity=".4" stroke-width="7" stroke-linecap="round"/>
+  <path d="M681 72c-21 22-34 43-39 63 27 4 52 4 78 0-6-22-19-42-39-63Z" fill="none" stroke="#6e6255" stroke-opacity=".38" stroke-width="6" stroke-linejoin="round"/>
+</svg>
