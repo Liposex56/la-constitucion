@@ -32,7 +32,12 @@ const units = [
           "El desarrollo necesita cuidado, salud, educación, juego y oportunidades reales.",
           "La identidad permite ser reconocido por un nombre, una historia y una pertenencia."
         ],
-        fact: "Artículo 44: los derechos de los niños prevalecen sobre los derechos de los demás."
+        fact: "Artículo 44: los derechos de los niños prevalecen sobre los derechos de los demás.",
+        video: {
+          src: "videos/cuidado-y-derechos-ninez.mp4",
+          title: "Video: cuidado y derechos de la niñez",
+          caption: "Apoyo visual para hablar de vida, cuidado, afecto y protección."
+        }
       },
       {
         id: "u1-a1",
@@ -176,7 +181,12 @@ const units = [
           "La salud permite aprender mejor y participar con bienestar.",
           "Una escuela protectora enseña, cuida y adapta sus espacios."
         ],
-        fact: "Artículo 67: la educación forma en el respeto a los derechos humanos, la paz y la democracia."
+        fact: "Artículo 67: la educación forma en el respeto a los derechos humanos, la paz y la democracia.",
+        video: {
+          src: "videos/educacion-salud-constitucion.mp4",
+          title: "Video: educación, salud y Constitución",
+          caption: "Apoyo visual para relacionar escuela, salud y ciudadanía."
+        }
       },
       {
         id: "u3-a1",
@@ -510,6 +520,13 @@ function renderUnit(unitId) {
 }
 
 function renderTheory(unit, step) {
+  const media = step.video ? `
+    <figure class="video-frame">
+      <video src="${step.video.src}" controls preload="metadata" playsinline aria-label="${step.video.title}"></video>
+      <figcaption>${step.video.caption}</figcaption>
+    </figure>
+  ` : `<img class="book-illustration" src="imagenes/libro-constitucion.svg" alt="" />`;
+
   const left = page(`
     ${buttonBack("Volver a la unidad", "unit", unit.id)}
     <div class="seal">${renderIcon("book")}</div>
@@ -517,7 +534,7 @@ function renderTheory(unit, step) {
     <h1 class="page-title">${step.subtitle}</h1>
     <div class="ornament" aria-hidden="true"></div>
     <p class="unit-description">${unit.description}</p>
-    <img class="book-illustration" src="imagenes/libro-constitucion.svg" alt="" />
+    ${media}
   `, "centered");
 
   const right = page(`
@@ -797,11 +814,16 @@ document.addEventListener("click", (event) => {
   }
 });
 
-const previewRoute = new URLSearchParams(window.location.search).get("preview");
+const previewParams = new URLSearchParams(window.location.search);
+const previewRoute = previewParams.get("preview");
 if (previewRoute) {
   coverScreen.hidden = true;
   bookStage.classList.remove("is-hidden");
   state.route = previewRoute === "unit1" ? "unit" : previewRoute;
   if (previewRoute === "unit1") state.selectedUnit = "u1";
+  if (previewRoute === "step") {
+    state.selectedUnit = previewParams.get("unit") || "u1";
+    state.selectedStep = previewParams.get("step") || "u1-t1";
+  }
   render();
 }
