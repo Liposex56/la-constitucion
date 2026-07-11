@@ -25,12 +25,12 @@
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
   margin: 0;
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
   background:
@@ -51,9 +51,12 @@ button {
 }
 
 .app-shell {
+  height: 100vh;
+  height: 100dvh;
   min-height: 100vh;
+  min-height: 100dvh;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto minmax(0, 1fr) auto;
 }
 
 .topbar {
@@ -62,9 +65,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
-  min-height: 96px;
-  padding: 18px clamp(20px, 4vw, 58px);
+  gap: 18px;
+  min-height: 74px;
+  padding: 10px clamp(18px, 3vw, 42px);
   color: var(--gold-light);
   background: linear-gradient(180deg, rgba(10, 22, 33, 0.98), rgba(8, 17, 26, 0.96));
   border-bottom: 1px solid rgba(201, 154, 82, 0.58);
@@ -74,15 +77,15 @@ button {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   color: inherit;
   text-decoration: none;
 }
 
 .brand img {
-  width: 58px;
-  height: 58px;
-  padding: 6px;
+  width: 46px;
+  height: 46px;
+  padding: 5px;
   border: 1px solid rgba(201, 154, 82, 0.55);
   border-radius: 10px;
   background: rgba(255, 248, 231, 0.08);
@@ -95,16 +98,16 @@ button {
 
 .brand strong {
   color: #f1d49b;
-  font-size: clamp(1.1rem, 2.5vw, 1.55rem);
+  font-size: clamp(1rem, 2vw, 1.35rem);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .brand small {
-  margin-top: 5px;
+  margin-top: 3px;
   color: rgba(239, 216, 168, 0.76);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -113,9 +116,9 @@ button {
 .top-home {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  min-height: 46px;
-  padding: 0 18px;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 16px;
   border: 1px solid rgba(239, 216, 168, 0.5);
   border-radius: 999px;
   color: #f4e5c7;
@@ -123,18 +126,20 @@ button {
 }
 
 .top-home-icon {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   background: currentColor;
   mask: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5.2v-6h-5.6v6H4a1 1 0 0 1-1-1v-8Zm2 1v6h2.2v-6h9.6v6H19v-6.1l-7-5.8-7 5.9Z'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 
 .library-scene {
   position: relative;
-  min-height: 720px;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
   display: grid;
   place-items: center;
-  padding: clamp(22px, 4vw, 54px);
+  padding: clamp(10px, 2.2vw, 24px);
 }
 
 .library-scene::before {
@@ -153,19 +158,20 @@ button {
   display: grid;
   place-items: center;
   width: min(100%, 980px);
-  min-height: 590px;
+  height: 100%;
+  min-height: 0;
 }
 
 .closed-book {
   position: relative;
-  width: min(72vw, 520px);
-  min-width: 320px;
+  width: min(44vw, 390px);
+  min-width: 260px;
   aspect-ratio: 0.72;
   display: grid;
   justify-items: center;
   align-content: center;
-  gap: 20px;
-  padding: clamp(34px, 5vw, 58px);
+  gap: 14px;
+  padding: clamp(24px, 3vw, 42px);
   color: #f3dfb5;
   text-align: center;
   background:
@@ -188,8 +194,8 @@ button {
 
 .book-spine {
   position: absolute;
-  inset: -10px auto -10px -62px;
-  width: 66px;
+  inset: -10px auto -10px -52px;
+  width: 56px;
   border-radius: 12px 0 0 12px;
   background:
     linear-gradient(90deg, rgba(255, 255, 255, 0.05), transparent),
@@ -209,18 +215,18 @@ button {
 }
 
 .book-spine::before {
-  top: 84px;
-  box-shadow: 0 38px 0 rgba(201, 154, 82, 0.35), 0 280px 0 rgba(201, 154, 82, 0.48);
+  top: 66px;
+  box-shadow: 0 34px 0 rgba(201, 154, 82, 0.35), 0 224px 0 rgba(201, 154, 82, 0.48);
 }
 
 .book-spine::after {
-  bottom: 86px;
+  bottom: 68px;
   box-shadow: 0 -38px 0 rgba(201, 154, 82, 0.35);
 }
 
 .cover-lines {
   position: absolute;
-  inset: 34px;
+  inset: 28px;
   border: 2px solid rgba(201, 154, 82, 0.64);
   border-radius: 4px;
   pointer-events: none;
@@ -250,9 +256,9 @@ button {
 }
 
 .cover-logo {
-  width: 86px;
-  height: 86px;
-  padding: 10px;
+  width: 68px;
+  height: 68px;
+  padding: 8px;
   border: 1px solid rgba(201, 154, 82, 0.56);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.04);
@@ -270,17 +276,17 @@ button {
 }
 
 .closed-book h1 {
-  max-width: 370px;
+  max-width: 320px;
   margin: 0;
   color: #f8ead0;
-  font-size: clamp(2rem, 4vw, 3.1rem);
+  font-size: clamp(1.75rem, 3.1vw, 2.45rem);
   line-height: 1.08;
 }
 
 .cover-copy {
   margin: 0;
   color: rgba(248, 234, 208, 0.82);
-  font-size: 1.08rem;
+  font-size: 1rem;
 }
 
 .gold-button,
@@ -294,8 +300,8 @@ button {
 }
 
 .gold-button {
-  min-height: 52px;
-  padding: 0 28px;
+  min-height: 46px;
+  padding: 0 24px;
   border: 1px solid #f5dfb4;
   border-radius: 13px;
   color: #6b461f;
@@ -319,7 +325,11 @@ button {
 .book-stage {
   position: relative;
   z-index: 2;
-  width: min(1180px, 96vw);
+  width: min(1120px, 95vw);
+  height: 100%;
+  max-height: 620px;
+  display: grid;
+  align-items: center;
   animation: bookArrive 520ms ease both;
 }
 
@@ -331,7 +341,9 @@ button {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 660px;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
   border-radius: 18px;
   filter: drop-shadow(0 34px 58px rgba(0, 0, 0, 0.48));
 }
@@ -339,7 +351,7 @@ button {
 .book::before {
   content: "";
   position: absolute;
-  inset: -18px -22px -16px;
+  inset: -14px -18px -12px;
   z-index: -2;
   border-radius: 26px;
   background:
@@ -349,8 +361,8 @@ button {
 .book::after {
   content: "";
   position: absolute;
-  top: 18px;
-  bottom: 18px;
+  top: 14px;
+  bottom: 14px;
   left: calc(50% - 1px);
   width: 2px;
   z-index: 5;
@@ -362,8 +374,9 @@ button {
 .page {
   position: relative;
   min-width: 0;
-  min-height: 660px;
-  padding: clamp(28px, 4vw, 54px);
+  height: 100%;
+  min-height: 0;
+  padding: clamp(22px, 3vw, 38px);
   background:
     radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.38), transparent 34%),
     repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(120, 83, 43, 0.048) 32px),
@@ -387,7 +400,7 @@ button {
 .page::before {
   content: "";
   position: absolute;
-  inset: 34px;
+  inset: 26px;
   border: 1px solid rgba(201, 154, 82, 0.34);
   border-radius: 8px;
   pointer-events: none;
@@ -412,7 +425,7 @@ button {
   position: relative;
   z-index: 1;
   height: 100%;
-  min-height: 552px;
+  min-height: 0;
   display: grid;
   align-content: center;
 }
@@ -420,7 +433,7 @@ button {
 .page-scroll {
   align-content: start;
   overflow: auto;
-  max-height: 560px;
+  max-height: 100%;
   padding-right: 6px;
 }
 
@@ -431,10 +444,10 @@ button {
 
 .seal {
   display: grid;
-  width: 68px;
-  height: 68px;
+  width: 58px;
+  height: 58px;
   place-items: center;
-  margin: 0 auto 20px;
+  margin: 0 auto 14px;
   border-radius: 50%;
   color: #f1dcc0;
   background: var(--navy);
@@ -442,8 +455,8 @@ button {
 }
 
 .seal svg {
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
 }
 
 h1,
@@ -456,35 +469,37 @@ p {
 .page-title {
   margin: 0;
   color: var(--ink);
-  font-size: clamp(2rem, 4vw, 3.15rem);
+  font-size: clamp(1.72rem, 3.2vw, 2.62rem);
   line-height: 1.08;
 }
 
 .page-subtitle {
   max-width: 420px;
-  margin: 18px auto 0;
+  margin: 14px auto 0;
   color: var(--muted);
-  font-size: 1.08rem;
-  line-height: 1.58;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .ornament {
   width: 210px;
   height: 22px;
-  margin: 22px auto;
+  margin: 16px auto;
   background:
     linear-gradient(90deg, transparent, var(--gold), transparent) center / 100% 1px no-repeat;
 }
 
 .book-illustration {
   width: min(100%, 420px);
-  margin: 24px auto 0;
+  max-height: 150px;
+  margin: 18px auto 0;
   opacity: 0.76;
+  object-fit: contain;
 }
 
 .menu-list {
   display: grid;
-  gap: 14px;
+  gap: 10px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -494,10 +509,10 @@ p {
   width: 100%;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  gap: 18px;
+  gap: 14px;
   align-items: center;
-  min-height: 88px;
-  padding: 16px 22px;
+  min-height: 72px;
+  padding: 12px 18px;
   border: 1px solid rgba(95, 67, 35, 0.18);
   border-radius: 12px;
   color: var(--ink);
@@ -513,8 +528,8 @@ p {
 .menu-icon,
 .card-icon {
   display: grid;
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   place-items: center;
   border-radius: 50%;
   color: #f5e4c4;
@@ -524,13 +539,13 @@ p {
 
 .menu-icon svg,
 .card-icon svg {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 }
 
 .menu-title {
   display: block;
-  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.15rem, 2.1vw, 1.55rem);
   font-weight: 700;
 }
 
@@ -549,7 +564,7 @@ p {
 }
 
 .credits-row {
-  margin-top: 28px;
+  margin-top: 18px;
   text-align: center;
 }
 
@@ -567,7 +582,7 @@ p {
   display: grid;
   gap: 8px;
   width: min(100%, 360px);
-  margin: 30px auto 0;
+  margin: 20px auto 0;
 }
 
 .progress-label {
@@ -607,12 +622,12 @@ p {
   flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .primary-action,
 .secondary-action {
-  min-height: 48px;
+  min-height: 42px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -620,6 +635,13 @@ p {
   padding: 0 22px;
   border-radius: 10px;
   font-weight: 700;
+}
+
+.primary-action svg,
+.secondary-action svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
 }
 
 .primary-action {
@@ -643,11 +665,11 @@ p {
 
 .back-button {
   justify-self: start;
-  margin-bottom: 28px;
+  margin-bottom: 18px;
 }
 
 .unit-tag {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   color: #9a6d34;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.86rem;
@@ -658,7 +680,7 @@ p {
 
 .unit-description {
   max-width: 460px;
-  margin: 18px auto 0;
+  margin: 14px auto 0;
   color: var(--muted);
   line-height: 1.56;
 }
@@ -666,17 +688,17 @@ p {
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  gap: 12px;
 }
 
 .content-card {
   position: relative;
-  min-height: 200px;
+  min-height: 170px;
   display: grid;
   align-content: start;
   justify-items: center;
-  gap: 10px;
-  padding: 22px 16px 18px;
+  gap: 8px;
+  padding: 16px 14px 14px;
   border: 1px solid rgba(95, 67, 35, 0.18);
   border-radius: 12px;
   color: var(--ink);
@@ -687,7 +709,7 @@ p {
 
 .content-card.wide {
   grid-column: 1 / -1;
-  min-height: 130px;
+  min-height: 104px;
   grid-template-columns: auto 1fr;
   align-items: center;
   justify-items: start;
@@ -696,20 +718,20 @@ p {
 
 .content-card h3 {
   margin: 0;
-  font-size: 1.34rem;
+  font-size: 1.2rem;
 }
 
 .content-card p {
   margin: 0;
   color: var(--muted);
-  line-height: 1.42;
+  line-height: 1.34;
 }
 
 .status {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 8px;
+  margin-top: 4px;
   color: var(--muted);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.85rem;
@@ -730,19 +752,19 @@ p {
 
 .theory-list {
   display: grid;
-  gap: 14px;
-  margin: 22px 0 0;
+  gap: 10px;
+  margin: 16px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .theory-list li,
 .fact-card {
-  padding: 16px 18px;
+  padding: 13px 15px;
   border: 1px solid rgba(95, 67, 35, 0.16);
   border-radius: 12px;
   color: var(--muted);
-  line-height: 1.48;
+  line-height: 1.4;
   background: rgba(255, 255, 255, 0.34);
 }
 
@@ -754,11 +776,11 @@ p {
 
 .activity-panel {
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .question-box {
-  padding: 20px;
+  padding: 16px;
   border: 1px solid rgba(95, 67, 35, 0.18);
   border-radius: 13px;
   text-align: center;
@@ -772,11 +794,11 @@ p {
 
 .answers {
   display: grid;
-  gap: 12px;
+  gap: 9px;
 }
 
 .answer-button {
-  min-height: 56px;
+  min-height: 48px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 14px;
@@ -847,7 +869,7 @@ p {
 }
 
 .feedback {
-  min-height: 44px;
+  min-height: 40px;
   padding: 12px 14px;
   border-radius: 12px;
   color: var(--muted);
@@ -870,7 +892,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  margin-top: 20px;
+  margin-top: 14px;
 }
 
 .badge {
@@ -970,7 +992,7 @@ p {
 .quote {
   position: relative;
   z-index: 5;
-  padding: 18px 20px 24px;
+  padding: 8px 20px 10px;
   color: #d6b477;
   text-align: center;
   background: linear-gradient(180deg, rgba(8, 17, 26, 0.98), rgba(7, 15, 24, 1));
@@ -978,12 +1000,12 @@ p {
 }
 
 .quote p {
-  margin: 0 0 6px;
+  margin: 0 0 3px;
 }
 
 .quote span {
   color: rgba(214, 180, 119, 0.72);
-  font-size: 0.9rem;
+  font-size: 0.82rem;
 }
 
 @keyframes bookArrive {
@@ -1012,13 +1034,175 @@ p {
   animation: pageSwap 260ms ease both;
 }
 
-@media (max-width: 980px) {
+@media (max-height: 820px) and (min-width: 981px) {
+  .quote {
+    display: none;
+  }
+
+  .topbar {
+    min-height: 66px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .brand img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand small {
+    display: none;
+  }
+
   .library-scene {
+    padding: 8px 18px;
+  }
+
+  .closed-book {
+    width: min(40vw, 345px);
+    min-width: 245px;
+    gap: 10px;
+    padding: 28px;
+  }
+
+  .cover-lines {
+    inset: 22px;
+  }
+
+  .cover-logo {
+    width: 56px;
+    height: 56px;
+  }
+
+  .closed-book h1 {
+    max-width: 285px;
+    font-size: clamp(1.55rem, 2.7vw, 2.1rem);
+  }
+
+  .gold-button {
+    min-height: 42px;
+  }
+
+  .book-stage {
+    max-height: calc(100dvh - 82px);
+  }
+
+  .book::before {
+    inset: -10px -14px -9px;
+  }
+
+  .page {
+    padding: clamp(18px, 2.4vw, 30px);
+  }
+
+  .page::before {
+    inset: 20px;
+  }
+
+  .seal {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .seal svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .page-title {
+    font-size: clamp(1.55rem, 2.8vw, 2.28rem);
+  }
+
+  .page-subtitle,
+  .unit-description {
+    line-height: 1.42;
+  }
+
+  .ornament {
+    margin: 12px auto;
+  }
+
+  .book-illustration {
+    max-height: 110px;
+    margin-top: 10px;
+  }
+
+  .menu-list {
+    gap: 8px;
+  }
+
+  .menu-item {
+    min-height: 64px;
+    padding: 10px 14px;
+  }
+
+  .menu-icon,
+  .card-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .menu-icon svg,
+  .card-icon svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .progress-block {
+    margin-top: 14px;
+  }
+
+  .content-card {
+    min-height: 148px;
+    padding: 14px 12px 12px;
+  }
+
+  .content-card.wide {
+    min-height: 88px;
+  }
+
+  .content-card h3 {
+    font-size: 1.08rem;
+  }
+
+  .content-card p,
+  .status {
+    font-size: 0.82rem;
+  }
+
+  .fact-card,
+  .theory-list li {
+    padding: 11px 13px;
+  }
+}
+
+@media (max-width: 980px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .app-shell {
+    height: auto;
+    min-height: 100vh;
+    min-height: 100dvh;
+  }
+
+  .library-scene {
+    height: auto;
     min-height: auto;
+    overflow: visible;
+  }
+
+  .book-stage {
+    height: auto;
+    max-height: none;
   }
 
   .book {
     grid-template-columns: 1fr;
+    height: auto;
   }
 
   .book::after {
@@ -1026,8 +1210,14 @@ p {
   }
 
   .page {
+    height: auto;
     min-height: auto;
     transform: none;
+  }
+
+  .page-scroll {
+    max-height: none;
+    overflow: visible;
   }
 
   .page-left,
