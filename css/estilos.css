@@ -169,7 +169,7 @@ svg {
 
 .header-logo-uptc {
   width: 92px;
-  background: #050505;
+  background: #fff;
 }
 
 .top-home {
@@ -2237,7 +2237,7 @@ button:disabled {
 
 .credits-logos figure:first-child img {
   padding: 8px;
-  background: #050505;
+  background: #fff;
 }
 
 .credits-logos figcaption {
