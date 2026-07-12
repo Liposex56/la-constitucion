@@ -129,6 +129,49 @@ svg {
   text-transform: uppercase;
 }
 
+.top-actions,
+.institution-logos {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+}
+
+.top-actions {
+  gap: 13px;
+  flex: 0 0 auto;
+}
+
+.institution-logos {
+  gap: 7px;
+  height: 42px;
+  padding-right: 13px;
+  border-right: 1px solid rgba(239, 213, 164, 0.28);
+}
+
+.header-logo {
+  display: block;
+  height: 34px;
+  flex: 0 0 auto;
+  padding: 2px 4px;
+  object-fit: contain;
+  border: 1px solid rgba(239, 213, 164, 0.32);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.header-logo-ave {
+  width: 38px;
+}
+
+.header-logo-li {
+  width: 112px;
+}
+
+.header-logo-uptc {
+  width: 92px;
+  background: #050505;
+}
+
 .top-home {
   min-height: 40px;
   display: inline-flex;
@@ -2103,6 +2146,12 @@ button:disabled {
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.52);
 }
 
+.credits-dialog {
+  width: min(94vw, 820px);
+  max-height: min(92dvh, 780px);
+  overflow: hidden;
+}
+
 .credits-dialog::backdrop,
 .confirm-dialog::backdrop {
   background: rgba(3, 9, 14, 0.76);
@@ -2115,6 +2164,14 @@ button:disabled {
   display: grid;
   gap: 14px;
   padding: 30px;
+}
+
+.credits-dialog form {
+  max-height: min(92dvh, 780px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(23, 54, 75, 0.58) rgba(184, 135, 63, 0.12);
 }
 
 .credits-dialog h2,
@@ -2150,6 +2207,95 @@ button:disabled {
 
 .credits-dialog dd {
   margin: 3px 0 0;
+}
+
+.credits-logos {
+  display: grid;
+  grid-template-columns: 0.8fr 1.35fr 1fr;
+  gap: 10px;
+}
+
+.credits-logos figure {
+  min-width: 0;
+  min-height: 112px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  gap: 7px;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(95, 67, 35, 0.18);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.credits-logos img {
+  width: 100%;
+  height: 68px;
+  object-fit: contain;
+}
+
+.credits-logos figure:first-child img {
+  padding: 8px;
+  background: #050505;
+}
+
+.credits-logos figcaption {
+  color: #72502b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.credits-team {
+  display: grid;
+  gap: 9px;
+  padding: 14px;
+  border-top: 1px solid rgba(184, 135, 63, 0.42);
+  border-bottom: 1px solid rgba(184, 135, 63, 0.42);
+  background: rgba(184, 135, 63, 0.065);
+}
+
+.credits-team h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.05rem;
+}
+
+.credits-team ul {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credits-team li {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  padding: 10px;
+  border-left: 3px solid var(--gold);
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.credits-team strong,
+.credits-team span {
+  overflow-wrap: anywhere;
+}
+
+.credits-team strong {
+  line-height: 1.28;
+}
+
+.credits-team span {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .dialog-close {
@@ -2317,6 +2463,33 @@ button:disabled {
 
   .brand small {
     display: none;
+  }
+
+  .top-actions {
+    gap: 7px;
+  }
+
+  .institution-logos {
+    gap: 4px;
+    height: 38px;
+    padding-right: 7px;
+  }
+
+  .header-logo {
+    height: 30px;
+    padding: 2px;
+  }
+
+  .header-logo-ave {
+    width: 32px;
+  }
+
+  .header-logo-li {
+    width: 82px;
+  }
+
+  .header-logo-uptc {
+    width: 66px;
   }
 
   .top-home {
@@ -2491,6 +2664,34 @@ button:disabled {
     min-height: 40px;
     padding: 0 11px;
     font-size: 0.8rem;
+  }
+
+  .credits-dialog form {
+    padding: 25px 22px;
+  }
+
+  .credits-team ul {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .brand > span {
+    display: none;
+  }
+
+  .credits-logos {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .credits-logos figure {
+    min-height: 92px;
+    grid-template-columns: minmax(0, 1fr) minmax(110px, 0.8fr);
+    grid-template-rows: auto;
+  }
+
+  .credits-logos img {
+    height: 58px;
   }
 }
 
