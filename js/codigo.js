@@ -718,12 +718,12 @@ function renderMenu() {
   const left = page(`
     <div class="hero-mark">${renderIcon("book")}</div>
     <p class="unit-tag">Bienvenido a</p>
-    <h1 class="page-title">Constitución Política y derechos humanos</h1>
+    <h1 class="page-title">ConectaDerechos TIC</h1>
     <div class="ornament" aria-hidden="true"></div>
     <p class="page-subtitle">Una ruta para comprender derechos, analizar situaciones cotidianas y tomar decisiones ciudadanas.</p>
     ${progressMarkup("Progreso general", progress, `${progress}%`)}
     <button class="primary-action" type="button" data-continue>${continueLabel}${renderIcon("arrow")}</button>
-    <div class="menu-emblem" aria-hidden="true"><img src="imagenes/logo-ddhh.svg" alt="" /></div>
+    <div class="menu-emblem" aria-hidden="true"><img src="imagenes/logo-conectaderechos-tic.png" alt="" /></div>
   `, "centered-page");
 
   const right = page(`
