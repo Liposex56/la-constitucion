@@ -1,10 +1,10 @@
-# ConectaDerechos TIC
+# Aula para Vivir Bien
 
-**Gestión del conocimiento, felicidad y ciudadanía**
+**Aprendizaje, derechos y felicidad con TIC**
 
-ConectaDerechos TIC es un libro educativo interactivo para aprender sobre la Constitución Política de Colombia, los derechos fundamentales y la ciudadanía mediante experiencias digitales progresivas.
+Aula para Vivir Bien es un libro educativo interactivo para aprender sobre la Constitución Política de Colombia, los derechos fundamentales, la ciudadanía y el bienestar mediante experiencias digitales progresivas.
 
-![Logo de ConectaDerechos TIC](imagenes/logo-conectaderechos-tic.png)
+![Logo de Aula para Vivir Bien](imagenes/logo-aula-vivir-bien.png)
 
 ## Experiencia educativa
 
@@ -22,4 +22,4 @@ ConectaDerechos TIC es un libro educativo interactivo para aprender sobre la Con
 
 ## Abrir el proyecto
 
-[Visitar ConectaDerechos TIC](https://liposex56.github.io/la-constitucion/)
+[Visitar Aula para Vivir Bien](https://liposex56.github.io/la-constitucion/)
